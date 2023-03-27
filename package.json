@@ -4,7 +4,8 @@
   "description": "A YAML transform for jest",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "preinstall": "tsc"
   },
   "repository": {
     "type": "git",
