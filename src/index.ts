@@ -27,7 +27,7 @@ export const process = (
 ): string => {
   const result = yaml.load(sourceText);
   const json = JSON.stringify(result, undefined, "\t");
-  return `module.exports = ${json}`;
+  return {code: `module.exports = ${json}`};
 };
 
 const transformer: Transformer = {
